@@ -24,6 +24,10 @@ class MyApp extends StatelessWidget {
             //한쪽만 값 지정
             margin: EdgeInsets.only(left: 20),
 
+            //패딩, 위젯 내부의 여백
+            //전부
+            padding: EdgeInsets.all(20),
+
             height: 100.0,
             width: 100.0,
             color: Colors.amber,
