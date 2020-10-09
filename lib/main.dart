@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
             child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
               radius: 50,
@@ -37,70 +38,82 @@ class MyApp extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            Container(
-              color: Colors.white,
-              margin: EdgeInsets.symmetric(
-                vertical: 10,
-                horizontal: 25,
-              ),
-              padding: EdgeInsets.all(10),
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.phone,
-                    color: Colors.teal.shade900,
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Container(
-                    width: 3,
-                    height: 30,
-                    color: Colors.teal.shade500,
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Text(
-                    "010-2000-0526",
-                    style: TextStyle(
-                        color: Colors.teal.shade900,
-                        fontFamily: "Baloo2",
-                        fontSize: 20),
-                  )
-                ],
+            SizedBox(
+              width: 200,
+              height: 30,
+              child: Divider(
+                color: Colors.teal.shade300,
+                thickness: 5,
               ),
             ),
-            Container(
+            Card(
               color: Colors.white,
               margin: EdgeInsets.symmetric(
                 vertical: 10,
                 horizontal: 25,
               ),
-              padding: EdgeInsets.all(10),
-              child: Row(
-                children: [
-                  Icon(Icons.email),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Container(
-                    width: 3,
-                    height: 30,
-                    color: Colors.teal.shade500,
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Text(
-                    "ITZYYEJI@itzyyeji.com",
-                    style: TextStyle(
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.phone,
                       color: Colors.teal.shade900,
-                      fontFamily: "Baloo2",
-                      fontSize: 20,
                     ),
-                  ),
-                ],
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Container(
+                      width: 3,
+                      height: 30,
+                      color: Colors.teal.shade500,
+                    ),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Text(
+                      "010-2000-0526",
+                      style: TextStyle(
+                          color: Colors.teal.shade900,
+                          fontFamily: "Baloo2",
+                          fontSize: 20),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            Card(
+              color: Colors.white,
+              margin: EdgeInsets.symmetric(
+                vertical: 10,
+                horizontal: 25,
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Row(
+                  children: [
+                    Icon(Icons.email),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Container(
+                      width: 3,
+                      height: 30,
+                      color: Colors.teal.shade500,
+                    ),
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Text(
+                      "ITZYYEJI@itzyyeji.com",
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: "Baloo2",
+                        fontSize: 20,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ],
