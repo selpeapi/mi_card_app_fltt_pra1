@@ -22,10 +22,21 @@ class MyApp extends StatelessWidget {
             Text(
               "ITZY, YEJI",
               style: TextStyle(
+                  fontFamily: "ConcertOne",
                   fontSize: 40,
                   color: Colors.white,
                   fontWeight: FontWeight.bold),
             ),
+            Text(
+              "ITZY, YEJI",
+              style: TextStyle(
+                fontFamily: "Baloo2",
+                fontSize: 20,
+                color: Colors.teal.shade100,
+                letterSpacing: 13,
+                fontWeight: FontWeight.bold,
+              ),
+            )
           ],
         )),
       ),
